@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(114, 114, 114);
+    width: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(249, 247, 244, 1);
+    width: 1920px;
+    height: 1005px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    position: relative;
+    background-image: linear-gradient(to right,rgba(137, 109, 77, 1), rgba(205, 183, 156, 1)); 
+    width: 630px;
+    height: 330px;
+    border-radius: 5px;
+    border: 8px solid rgb(165, 144, 120);
+}
+
+.box .p1 {
+    margin-top: 92px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.box .p2 {
+    margin-top: 28px;
+    margin-left: 90px;
+    width: 458px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 31px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.box .divx {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 32px;
+    height: 32px;
+    transition: 0.3s;
+}
+
+.box .divx:hover {
+    transform: scale(1.1);
+} 
+
+.divx span {
+    position: absolute;
+    top: 14.5px;
+    background-color: rgba(255, 255, 255, 1);
+    width: 32px;
+    height: 2px;
+    border-radius: 2px;
+}
+
+.divx span:nth-child(1) {
+    transform: rotate(40deg);
+}
+
+.divx span:nth-child(2) {
+    transform: rotate(-40deg);
+}
